@@ -1426,10 +1426,13 @@ const RATA_PERKAPITA = [
 const ANGKA_KUNCI = {
   tonPerHari: 68599.88,
   tonPerTahun: 25038955.77,
+  tonPerTahunPptJuta: 25.14,
   jumlahProvinsi: 34,
   rataProvinsiTon: 736439.88,
   perkapitaKg: 0.25,
   pctKertasKarton: 11.27,
+  pctTerkelola: 34.27,
+  pctTidakTerkelola: 65.73,
   penduduk: 278000000,
 };
 
@@ -1489,7 +1492,7 @@ function WasteDataPanel() {
             <br />
             <br />
             <span style={{ color: "var(--ember)" }}>Sumber data:</span> SIPSN
-            KLHK 2023, BPS Statistik Lingkungan Hidup 2023, Jakstranas 2025.
+            KLHK 2025, BPS Statistik Lingkungan Hidup 2023, Jakstranas 2025.
             Data yang ditampilkan adalah data resmi yang dipublikasikan — bukan
             estimasi.
           </div>
@@ -1512,13 +1515,24 @@ function WasteDataPanel() {
             },
             {
               icon: "📅",
-              val: "25,04 juta ton",
-              label: "Total timbulan per tahun 2025",
+              val: "25,04–25,14 juta ton",
+              label:
+                "Total timbulan per tahun 2025 (laporan rinci vs ringkasan PPT)",
             },
             {
               icon: "📄",
               val: "11,27%",
               label: "Komposisi kertas & karton (BAB II)",
+            },
+            {
+              icon: "✅",
+              val: "34,27%",
+              label: "Sampah terkelola (SIPSN 2025, data PPT)",
+            },
+            {
+              icon: "⚠️",
+              val: "65,73%",
+              label: "Sampah belum terkelola (SIPSN 2025, data PPT)",
             },
             {
               icon: "👤",
