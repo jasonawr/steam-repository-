@@ -2299,8 +2299,7 @@ export default function App() {
           <div className="logo-flame">🔥</div>
           <div className="logo-title">BACKBURNER</div>
           <div className="logo-sub">
-            Bringing Paper Waste Back to the Burner · Analisis Proyek STEAM ·
-            SMA Labschool Jakarta 2026
+            Bringing Paper Waste Back to the Burner
           </div>
         </header>
 
